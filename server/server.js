@@ -11,7 +11,7 @@ app.use(express.json());
 require('./routes/htmlRoutes')(app);
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost:27017/your-database-name",
+  process.env.MONGODB_URI || "mongodb://localhost:27017/jateDB",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
